@@ -1,0 +1,53 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class ListClass {
+	
+	private List nameList;
+	public List getNameList() {
+		return nameList;
+	}
+	public void setNameList(List nameList) {
+		this.nameList = nameList;
+	}
+	private List phoneNumber;
+	public List getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(List phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	
+	public List addname(String name){
+		List localName=new ArrayList();
+		
+		localName.add(name);
+		
+		return localName;
+		
+	}
+	
+	public List addname(String[] name){
+		List localName=new ArrayList();
+		
+		for(String name2 : name){
+		localName.add(name2);
+		}
+		return localName;
+		
+	}
+	public void show(List<String> name){
+		
+		for(String name2 : name){
+		System.out.println("name "+name2);
+			
+		}
+		}
+		
+		
+}
+	
+	
+
+
