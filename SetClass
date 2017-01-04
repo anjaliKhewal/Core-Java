@@ -1,0 +1,35 @@
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+
+public class SetClass {
+
+	private List nameList;
+	public List getNameList() {
+		return nameList;
+	}
+	public void setNameList(List nameList) {
+		this.nameList = nameList;
+	}
+	private List phoneNumber;
+	public List getPhoneNumber() {
+		return phoneNumber;
+	}
+	public void setPhoneNumber(List phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	
+	public void showPhone(){
+	int [] phoneNumberArr = {1234,5678,9101};
+	
+	Set<Integer> intSet = new HashSet<Integer>();
+	
+		for(int i : phoneNumberArr){
+			
+			intSet.add(i);
+			
+		}
+	}
+}
+
